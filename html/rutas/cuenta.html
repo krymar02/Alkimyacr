@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkimya-Tu Cuenta</title>
+</head>
+<body>
+    <header>
+        <div><!--Logo de alkimya-->
+            <a href="../../index.html">
+                <!--etiqueta imagen que lleva a inicio-->
+                <img src="#" alt="Logo Alkimyacr">
+            </a>
+        </div>
+    </header>
+    <section>
+        <h1>Crea tu cuenta y guarda tus productos favoritos!</h1>
+        <form action="./php/formulario.php" method="post" autocomplete="off">
+        
+            <!--Inputs espacios de entradas de datos, atributo type segun eso cumplen su funcion -->
+            <!--Label define una etiqueta en el form-->
+            <!--Para relacional un labñ con un input
+            se usa el mismo id en el for del label-->
+            <!--Name sirve para que el script pueda acceder al contenido del input-->
+            <!--Name y el id se usan iguales-->
+            <!--Name se usa para funciones del servidor-->
+            <!--Estilos y con js si llamo el id-->
+            <!--CSS: #inputNombre .estilosInput-->
+
+            <label for="inputNombre">Nombre Completo</label>
+            <input type="text" id="inputNombre" name="inputNombre">
+            <br>
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" value="18" id="edad" min="18" max="60"> 
+            <br>
+            <br>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="ejemplo@servidor.com">
+            <br>
+            <br>
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass">
+            <br>
+            <br>
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono">
+            <br>
+            <label for="Fecha">Fecha de nacimiento</label>
+            <input type="date" id="Fecha">
+            <br>
+            <br>
+                <!--BOTONES-->
+
+            <input type="submit" value="Enviar" id="botonEnviar">
+            <input type="reset" value="Limpiar" id="botonLimpiar">
+        </form>
+        <section>
+            <!--Pendiente porque no se si lo voy a agregar-->
+            <a href="#">Agregar favoritos</a>
+        </section>
+    </section>
+    <footer>
+        <div>
+            <p>
+                &copy; copyright 2023 | creado por Kryssia Martinez
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
